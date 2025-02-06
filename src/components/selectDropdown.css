@@ -1,0 +1,118 @@
+.custom--dropdown {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.custom--dropdown-label {
+  flex-basis: 150px;
+}
+
+.custom--dropdown-container {
+  flex: 1;
+  text-align: left;
+  border: 1px solid #ccc;
+  position: relative;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.custom--dropdown-container .dropdown-input {
+  padding: 7px 11px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  user-select: none;
+  gap: 7px;
+}
+
+.custom--dropdown-container .dropdown-input .dropdown-selected-value.placeholder {
+  color: #82868b;
+}
+
+.custom--dropdown-container .dropdown-tool svg {
+  transition: all 0.2s ease-in-out;
+}
+
+.custom--dropdown-container .dropdown-tool svg.translate {
+  transform: rotate(180deg);
+}
+
+.custom--dropdown-container .dropdown-menu {
+  width: 100%;
+  position: absolute;
+  transform: translateY(6px);
+  border: 1px solid #dbdbdb;
+  border-radius: 6px;
+  overflow: auto;
+  background-color: #fff;
+  z-index: 1001;
+  max-height: 312px;
+  min-height: 50px;
+}
+
+.custom--dropdown-container .dropdown-item {
+  padding: 7px 10px;
+  cursor: pointer;
+  transition: background-color 0.35s ease;
+  font-weight: 500;
+}
+
+.custom--dropdown-container .dropdown-item:hover {
+  background-color: #ddd;
+}
+
+.custom--dropdown-container .dropdown-item.selected {
+  background-color: #ddd;
+}
+
+.custom--dropdown-container .search-box svg {
+  position: absolute;
+}
+
+.custom--dropdown-container .search-box {
+  border-bottom: 1px solid #ccc;
+}
+
+.custom--dropdown-container .search-box svg {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.custom--dropdown-container .search-box input {
+  width: 100%;
+  padding: 10px 10px 10px 40px;
+  box-sizing: border-box;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.custom--dropdown-container .dropdown-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.custom--dropdown-container .dropdown-tag-item {
+  background-color: #eee;
+  color: #444;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 15px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.custom--dropdown-container .dropdown-tag-close {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  border: 1px solid #444;
+  border-radius: 7px;
+}
